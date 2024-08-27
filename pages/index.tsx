@@ -175,7 +175,7 @@ export async function getServerSideProps(context: any) {
 
   const totalPages = Math.ceil(products.length / productsPerPage);
 
-  if (currentPage > totalPages || currentPage <= 1) {
+  if (currentPage > totalPages || currentPage < 1) {
     const queryString = new URLSearchParams(restOfQuery).toString();
     const destination = queryString ? `/?${queryString}` : "/";
 
