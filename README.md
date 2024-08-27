@@ -2,6 +2,8 @@
 
 Welcome to the Shopation Case Study project! This project was developed as part of a frontend developer technical assessment, focusing on implementing a product listing and detail page with various features including cart management, filtering, and local storage persistence.
 
+**LIVE DEMO: https://shopation-case.vercel.app/**
+
 ## Project Description
 
 ### General Requirements
