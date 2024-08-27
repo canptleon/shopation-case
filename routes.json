@@ -1,0 +1,14 @@
+[
+  {
+    "source": "/",
+    "destination": "/index"
+  },
+  {
+    "source": "/:slug",
+    "destination": "/detail?slug=/:slug"
+  },
+  {
+    "source": "/checkout",
+    "destination": "/checkout"
+  }
+]
