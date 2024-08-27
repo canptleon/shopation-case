@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <div className="container mx-auto mt-3">
-      <div className="relative bg-[linear-gradient(90deg,_rgba(26,215,255,1)_0%,_rgba(10,148,243,1)_100%)] text-white p-10 rounded-[10px] mb-5">
+      <div className="relative bg-[linear-gradient(90deg,_rgba(26,215,255,1)_0%,_rgba(10,148,243,1)_100%)] text-white p-10 rounded-[10px] mb-5 xsfull:w-[97%] mx-auto">
         <Link
           href="/"
           className="text-xl font-bold absolute top-1/2 left-4 transform -translate-y-1/2 [filter:drop-shadow(2px_4px_1px_lightgray)] tracking-[1px] font-[system-ui]">

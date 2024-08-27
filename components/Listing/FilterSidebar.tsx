@@ -38,7 +38,7 @@ const FilterSidebar: React.FC<FilterSidebarProps> = ({
   return (
     <aside
       className={`w-64 bg-white rounded-[10px] p-4 border-[1px] border-[solid] border-[#ebebeb] [filter:drop-shadow(3px_9px_6px_lightgray)]
-    xsfull:fixed xsfull:top-[0] xsfull:left-[0] xsfull:right-[0] xsfull:w-full xsfull:h-full ${isMobileFilterOn ? "xsfull:block" : "xsfull:hidden"} xsfull:z-[5] xsfull:p-[40px]
+    xsfull:fixed xsfull:top-[0] xsfull:left-[0] xsfull:right-[0] xsfull:w-full xsfull:h-full ${isMobileFilterOn ? "xsfull:block" : "xsfull:hidden"} xsfull:z-[9999] xsfull:p-[40px] 
     `}>
       <div className="sticky top-[10px]">
         <h2 className="text-xl font-bold mb-4">Filters</h2>
