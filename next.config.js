@@ -9,12 +9,12 @@ let hostConfig;
 switch (process.env.APP_ENV) {
   case 'development':
     hostConfig = {
-      SHOPATION_SITE: JSON.stringify('http://127.0.0.1:3001/'),
+      SHOPATION_SITE: JSON.stringify("http://localhost:3000/"),
     };
     break;
   case 'production':
     hostConfig = {
-      SHOPATION_SITE: JSON.stringify('http://127.0.0.1:3001/'),
+      SHOPATION_SITE: JSON.stringify("http://localhost:3000/"),
     };
     break;
   default:
