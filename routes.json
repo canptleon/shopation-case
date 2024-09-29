@@ -4,7 +4,7 @@
     "destination": "/index"
   },
   {
-    "source": "/:slug",
+    "source": "/product/:slug",
     "destination": "/detail?slug=/:slug"
   },
   {

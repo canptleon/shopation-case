@@ -41,13 +41,11 @@ function Detail({ product }: Props) {
   );
 };
 
-export default Detail;
-
 export async function getServerSideProps(context: any) {
-  const slug = context.req.url.replace(/^\/|\/$/g, "");
-
-  const isNumber = !isNaN(slug);
-  const isPositive = Number(slug) >= 0;
+  const { slug } = context.query;
+  
+  const isNumber = !isNaN(slug.slice(1));
+  const isPositive = Number(slug.slice(1)) >= 0;
 
   if (!isNumber || (isNumber && !isPositive)) {
     return {
@@ -58,7 +56,7 @@ export async function getServerSideProps(context: any) {
     };
   } else {
     try {
-      const response = await getProduct(slug);
+      const response = await getProduct(slug.slice(1));
       if (!response.body) {
         return {
           notFound: true,
@@ -81,3 +79,5 @@ export async function getServerSideProps(context: any) {
     }
   }
 }
+
+export default Detail;

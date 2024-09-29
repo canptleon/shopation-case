@@ -14,7 +14,7 @@ function ProductList({ products, addToCart }: ProductListProps) {
         <div
           key={product.id}
           className="border rounded-lg shadow-md overflow-hidden p-4 bg-white hover:bg-gray-100">
-          <Link href={`/${product.id}`}>
+          <Link href={`/product/${product.id}`}>
             <div>
               <img
                 src={product.image}
